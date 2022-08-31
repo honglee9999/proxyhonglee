@@ -43,7 +43,8 @@ rhel5 ()	{
 	# Installing necessary packages (Squid, httpd for htpasswd and dependencies)
 	yum install perl-DBI libecap squid httpd -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid/passwd $usrn
 	# Downloading necessary Squid.conf for the corresponding OS & system architecture
@@ -68,7 +69,7 @@ rhel6 ()	{
 	# Installing necessary packages (Squid, httpd-tools for htpasswd and dependencies)
 	yum install squid httpd-tools -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid/passwd $usrn
 	# Downloading necessary Squid.conf for the corresponding OS & system architecture
@@ -91,7 +92,7 @@ rhel7 ()	{
 	# Installing necessary packages (Squid, httpd-tools for htpasswd and dependencies)
 	yum install nano dos2unix squid httpd-tools -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid/passwd $usrn
 	# Downloading Squid configuration 
@@ -111,7 +112,7 @@ deb ()	{
 	# Installing necessary packages (Squid, apache2-utils for htpassword and dependencies)
 	apt-get install apache2-utils squid3 -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid3/passwd $usrn
 	# Downloading Squid configuration
@@ -131,7 +132,7 @@ deb8 ()	{
 	# Installing necessary packages (Squid, apache2-utils for htpassword and dependencies)
 	apt-get install apache2-utils squid3 -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid3/passwd $usrn
 	# Downloading Squid configuration
@@ -151,7 +152,7 @@ ubt ()	{
 	# Installing necessary packages (Squid, apache2-utils for htpassword and dependencies)
 	apt-get install nano dos2unix apache2-utils squid3 -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid3/passwd $usrn
 	# Downloading Squid configuration
@@ -173,7 +174,7 @@ ubt_ip ()	{
 	# Installing necessary packages (Squid, apache2-utils for htpassword and dependencies)
 	apt-get install nano dos2unix apache2-utils squid3 -y
 	# Asking user to set a username via read and writing it into $usrn
-	# read -e -p "this is my first name :honglee" usrn
+	# read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	# htpasswd -c /etc/squid3/passwd $usrn
 	# Downloading Squid configuration
@@ -195,7 +196,7 @@ ubt_null ()	{
 	# Installing necessary packages (Squid, apache2-utils for htpassword and dependencies)
 	apt-get install nano dos2unix apache2-utils squid3 -y
 	# Asking user to set a username via read and writing it into $usrn
-	# read -e -p "this is my first name :honglee" usrn
+	# read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	# htpasswd -c /etc/squid3/passwd $usrn
 	# Downloading Squid configuration
@@ -215,7 +216,7 @@ fed () {
 	# Installing necessary packages (Squid, httpd-tools for htpasswd and dependencies)
 	yum install squid httpd-tools -y
 	# Asking user to set a username via read and writing it into $usrn
-	read -e -p "this is my first name :honglee" usrn
+	read -e -p "nhap ten dang nhap  ban thich ne" usrn
 	# Creating user with username from $usrn and asking user to set a password
 	htpasswd -c /etc/squid/passwd $usrn
 	# Downloading necessary Squid.conf for the corresponding OS & system architecture
